@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jc497971.myutilityapp.tempActivity">
+
+    <TextView
+        android:id="@+id/textCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="Enter in Celsius:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textFarhenhiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editCelsius"
+        android:layout_marginTop="13dp"
+        android:text="Answer in Farhenhiet:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editFarhenhiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFarhenhiet"
+        android:layout_alignBottom="@+id/textFarhenhiet"
+        android:layout_alignParentEnd="true"
+        android:contextClickable="false"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textCelsius"
+        android:layout_alignBottom="@+id/textCelsius"
+        android:layout_alignStart="@+id/editFarhenhiet"
+        android:ems="10"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonConvert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFarhenhiet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Convert to Farhenhiet" />
+
+
+    <TextView
+        android:id="@+id/textinFarhenhiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ReverseFarhenhiet"
+        android:layout_alignBottom="@+id/ReverseFarhenhiet"
+        android:layout_alignParentStart="true"
+        android:text="Enter in Farhenhiet:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textinCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ReverseCelsius"
+        android:layout_alignBottom="@+id/ReverseCelsius"
+        android:layout_alignParentStart="true"
+        android:text="Answer in Celsius:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ReverseFarhenhiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editFarhenhiet"
+        android:layout_below="@+id/buttonConvert2"
+        android:layout_marginTop="81dp"
+        android:ems="10"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/ReverseCelsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ReverseFarhenhiet"
+        android:layout_below="@+id/ReverseFarhenhiet"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonConvert3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ReverseCelsius"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Convert to Celsius" />
+</RelativeLayout>

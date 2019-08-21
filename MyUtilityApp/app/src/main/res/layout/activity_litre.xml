@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jc497971.myutilityapp.LitreActivity">
+
+    <TextView
+        android:id="@+id/textMililitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:text="Enter in Mililitres (ml) :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editMililitres"
+        android:layout_marginTop="13dp"
+        android:text="Answer in Litres (l) :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editMililitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textMililitre"
+        android:layout_alignBottom="@+id/textMililitre"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textMililitre"
+        android:ems="10"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textLitres"
+        android:layout_alignBottom="@+id/textLitres"
+        android:layout_toEndOf="@+id/textLitres"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonConvert4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editLitres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Convert to Litres" />
+
+    <TextView
+        android:id="@+id/textinLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonConvert4"
+        android:layout_marginTop="37dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:text="Enter in Litres (l) :" />
+
+    <TextView
+        android:id="@+id/textinMililitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ReverseMililitres"
+        android:layout_alignBottom="@+id/ReverseMililitres"
+        android:layout_alignParentStart="true"
+        android:text="Answer in Mililitres (ml) :"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/ReverseMililitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editMililitres"
+        android:layout_below="@+id/buttonConvert4"
+        android:layout_marginTop="81dp"
+        android:ems="10"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/ReverseLitres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textinLitres"
+        android:layout_alignBottom="@+id/textinLitres"
+        android:layout_alignStart="@+id/editLitres"
+        android:layout_toEndOf="@+id/textinLitres"
+        android:ems="10"
+        android:hint="Enter here"
+        android:inputType="number"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonConvert5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ReverseMililitres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Convert to Mililitres" />
+</RelativeLayout>

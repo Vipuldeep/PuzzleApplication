@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MyUtilityApp</string>
+    <string name="title_activity_main">Converter App</string>
+    <string name="title_activity_second">Converter App - Choices</string>
+    <string name="title_activity_cm">Converter App - length</string>
+    <string name="title_activity_temp">Converter App - Temperature</string>
+    <string name="title_activity_litre">Converter App - Litre</string>
+    <string name="title_activity_settings">Converter App - Settings</string>
+    <string-array name="color_names">
+        <item>Color Names</item>
+        <item>cyan</item>
+        <item>aquamarine</item>
+        <item>darkturquoise</item>
+        <item>dodgerblue</item>
+        <item>royalblue</item>
+        <item>navy</item>
+        <item>hotpink</item>
+        <item>dimgray</item>
+        <item>slategray</item>
+        <item>black</item>
+
+    </string-array>
+    <string-array name="color_codes">
+        <item>HEX codes</item>
+        <item>00FFFF</item>
+        <item>7FFFD4</item>
+        <item>00CED1</item>
+        <item>1E90FF</item>
+        <item>4169E1</item>
+        <item>000080</item>
+        <item>FF69B4</item>
+        <item>696969</item>
+        <item>708090</item>
+        <item>000000</item>
+    </string-array>
+</resources>
